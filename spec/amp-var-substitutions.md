@@ -276,3 +276,12 @@ For instance:
 <amp-pixel src="https://foo.com/pixel?timestamp=TIMESTAMP"></amp-pixel>
 ```
 
+### TOTAL_ENGAGED_TIME
+
+Get the total time the user has been enagaged with the page since the page was
+loaded.
+
+For instance:
+```html
+<amp-pixel src="https://foo.com/pixel?tet=TOTAL_ENGAGED_TIME"></amp-pixel>
+```

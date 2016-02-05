@@ -54,6 +54,7 @@ export const ANALYTICS_CONFIG = {
       'screenColorDepth': 'SCREEN_COLOR_DEPTH',
       'browserLanguage': 'BROWSER_LANGUAGE',
       'documentCharset': 'DOCUMENT_CHARSET',
+      'totalEngagedTime': 'TOTAL_ENGAGED_TIME'
     }
   },
 

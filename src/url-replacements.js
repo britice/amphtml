@@ -25,6 +25,7 @@ import {viewerFor} from './viewer';
 import {viewportFor} from './viewport';
 import {vsyncFor} from './vsync';
 import {userNotificationManagerFor} from './user-notification';
+import {activityFor} from './activity';
 
 /** @private {string} */
 const TAG_ = 'UrlReplacements';
@@ -232,6 +233,10 @@ class UrlReplacements {
     this.set_('CONTENT_LOAD_TIME', () => {
       return this.getTimingData_('navigationStart',
           'domContentLoadedEventStart');
+    });
+
+    this.set_('TOTAL_ENGAGED_TIME', () => {
+      return activityFor(this.win_).getTotalEngagedTime();
     });
   }
 
